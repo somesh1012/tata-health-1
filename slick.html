@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slick carousel</title>
+    
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+	
+	<!-- Bootstrap core CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.css">
+    <style>
+        /* Defines the width of the carousel and centers it on the page */
+        .slick-carousel {
+            margin: 0 auto;
+            width: 1000px;
+        }
+
+        /* The width of each slide */
+        .slick-slide {
+            width: 350px;
+        }
+
+        /* Color of the arrows */
+        .slick-next::before,
+        .slick-prev::before {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+     
+      <!-- Create your own class for the containing div -->
+<div class="slick-carousel">
+    <!-- Inside the containing div, add one div for each slide -->
+    <div>
+      <!-- You can put an image or text inside each slide div -->
+      <img src="http://placekitten.com/g/320/240">
+    </div>
+    <div>
+      <img src="http://placekitten.com/g/320/240">
+    </div>
+    <div>
+      <img src="http://placekitten.com/g/320/240">
+    </div>
+    <div>
+      <img src="http://placekitten.com/g/320/240">
+    </div>
+    <div>
+      <img src="http://placekitten.com/g/320/240">
+    </div>
+  </div>
+
+  <!-- jQuery CDN -->
+ <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+ <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+ <!-- JQuery -->
+ <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <!-- Bootstrap tooltips -->
+ <script type="text/javascript"
+     src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+ <!-- Bootstrap core JavaScript -->
+ <script type="text/javascript"
+     src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+ <!-- MDB core JavaScript -->
+ <script type="text/javascript"
+     src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+<!-- slick Carousel CDN -->
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
+<script>
+    $('.slick-carousel').slick({
+  infinite: true,
+  slidesToShow: 1, // Shows a three slides at a time
+  slidesToScroll: 1, // When you click an arrow, it scrolls 1 slide at a time
+  arrows: true, // Adds arrows to sides of slider
+  dots: true ,
+  navs: true// Adds the dots on the bottom
+});
+</script>
+</body>
+</html>
